@@ -26,6 +26,11 @@ void Screen::update() {
     SDL_RenderPresent(renderer);
 }
 
+void Screen::blit(SDL_Texture* texture, SDL_Rect* srcRect = nullptr, SDL_Rect* destRect = nullptr)
+{
+    return;
+}
+
 void Screen::setTitle(const std::string& title) {
     SDL_SetWindowTitle(window, title.c_str());
 }

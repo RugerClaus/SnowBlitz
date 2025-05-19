@@ -12,6 +12,7 @@ public:
 
     void fill(SDL_Color color);
     void update();
+    void blit(SDL_Texture* texture, SDL_Rect* srcRect = nullptr, SDL_Rect* destRect = nullptr);
     void setTitle(const std::string& title);
     void setIcon(SDL_Surface* icon);
 
